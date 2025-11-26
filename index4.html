@@ -1,0 +1,502 @@
+{\rtf1\ansi\ansicpg950\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
+\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;\red212\green212\blue212;
+\red113\green192\blue131;\red167\green197\blue152;\red183\green111\blue247;\red54\green192\blue160;\red246\green124\blue48;
+\red163\green79\blue131;}
+{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c50196\c52549\c54510;\cssrgb\c86275\c86275\c86275;
+\cssrgb\c50588\c78824\c58431;\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c54118\c97647;\cssrgb\c23922\c78824\c69020;\cssrgb\c98039\c56471\c24314;
+\cssrgb\c70588\c40000\c58431;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "zh-TW"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 \uc0\u26085 \u26412 \u28369 \u38634 \u22882 \u33775 \u34892 \u31243 \cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 <!-- \uc0\u24341 \u20837  Tailwind CSS CDN -->\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 <!-- \uc0\u24341 \u20837  Inter \u23383 \u39636  -->\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 <!-- \uc0\u24341 \u20837  Lucide Icons -->\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://unpkg.com/lucide@latest"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 :root\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 --color-primary:\cf5 \strokec5  #374151\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Deep Slate Blue */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 --color-secondary:\cf5 \strokec5  #F3F4F6\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Light Gray */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 --color-accent:\cf5 \strokec5  #EAB308\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Gold/Yellow Accent */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 --color-white:\cf5 \strokec5  #ffffff\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf2 \strokec2 body\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 font-family:\cf5 \strokec5  \cf10 \strokec10 'Inter'\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  \cf7 \strokec7 var(--color-secondary)\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 var(--color-primary)\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 /* \uc0\u26085 \u24335 \u22882 \u33775 \u21345 \u29255 \u22522 \u30990 \u39080 \u26684  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .luxury-card\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  \cf7 \strokec7 var(--color-white)\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf11 \strokec11 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Rounded corners */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf11 \strokec11 0\cf5 \strokec5  \cf11 \strokec11 5px\cf5 \strokec5  \cf11 \strokec11 10px\cf5 \strokec5  \cf11 \strokec11 -3px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0.05\cf7 \strokec7 )\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf5 \strokec5  \cf11 \strokec11 2px\cf5 \strokec5  \cf11 \strokec11 4px\cf5 \strokec5  \cf11 \strokec11 -2px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0.02\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf11 \strokec11 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 /* \uc0\u20132 \u36890 \u21345 \u29255  - \u28154 \u34253 \u33394 \u37002 \u26694  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .card-transport\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-left:\cf5 \strokec5  \cf11 \strokec11 5px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #60A5FA\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Blue for transport */\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 /* \uc0\u26223 \u40670 \u21345 \u29255  - \u32160 \u33394 \u37002 \u26694  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .card-attraction\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-left:\cf5 \strokec5  \cf11 \strokec11 5px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #10B981\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Green for attraction */\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 /* \uc0\u39184 \u39154 /\u20303 \u23487 \u21345 \u29255  - \u32043 \u33394 \u37002 \u26694  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .card-accommodation\cf9 \strokec9 ,\cf5 \strokec5  \cf2 \strokec2 .card-food\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-left:\cf5 \strokec5  \cf11 \strokec11 5px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #8B5CF6\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Purple for accommodation */\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 /* \uc0\u24213 \u37096 \u23566 \u33322 \u27396  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .bottom-nav\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf11 \strokec11 0\cf5 \strokec5  \cf11 \strokec11 -4px\cf5 \strokec5  \cf11 \strokec11 6px\cf5 \strokec5  \cf11 \strokec11 -1px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0.1\cf7 \strokec7 )\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf5 \strokec5  \cf11 \strokec11 -2px\cf5 \strokec5  \cf11 \strokec11 4px\cf5 \strokec5  \cf11 \strokec11 -2px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0.06\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 backdrop-filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf11 \strokec11 10px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf11 \strokec11 255\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 255\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 255\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 0.9\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 overflow-x:\cf5 \strokec5  \cf7 \strokec7 auto\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Allow horizontal scroll for many tabs */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 white-space:\cf5 \strokec5  \cf7 \strokec7 nowrap\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 /* \uc0\u37325 \u35201 \u30340 \u27161 \u31844 /\u20195 \u34399  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .tag-important\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #F87171\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 var(--color-white)\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf11 \strokec11 700\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 inline-block\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3             \cf4 \strokec4 padding:\cf5 \strokec5  \cf11 \strokec11 2px\cf5 \strokec5  \cf11 \strokec11 8px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf11 \strokec11 9999px\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Full rounded */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 font-size:\cf5 \strokec5  \cf11 \strokec11 0.75rem\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 line-height:\cf5 \strokec5  \cf11 \strokec11 1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf2 \strokec2 .tab-btn.active\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-color:\cf5 \strokec5  \cf7 \strokec7 var(--color-accent)\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 var(--color-primary)\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 /* \uc0\u20303 \u23487 \u36039 \u35338 \u21312 \u22602  */\cf5 \cb1 \strokec5 \
+\cb3         \cf2 \strokec2 .accommodation-detail\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #fefce8\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Light Yellow */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border:\cf5 \strokec5  \cf11 \strokec11 1px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #fde047\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Yellow border */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #b45309\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 /* Darker text */\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 padding:\cf5 \strokec5  \cf11 \strokec11 12px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 margin-top:\cf5 \strokec5  \cf11 \strokec11 12px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf11 \strokec11 0.75rem\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 flex-start\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "min-h-screen"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "app"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-xl mx-auto pb-20"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 <!-- Content will be rendered here -->\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 // --- Global Data ---\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf12 \strokec12 const\cf5 \strokec5  \cf13 \strokec13 ITINERARY_DATA\cf5 \strokec5  \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 // 1/14 (Day 1) - \uc0\u20132 \u36890 \u26085 \cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                 id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 1\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/14 (\uc0\u36913 \u22235 )"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 1"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u25269 \u36948 \u26481 \u20140 \u65306 \u19978 \u37326 \u20303 \u23487 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u26481 \u20140 , \u19978 \u37326 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Accommodation"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "plane"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u20840 \u22825 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36023 JR\u26481 \u20140 \u24291 \u22495 \u21608 \u36938 \u21048 (\u19977 \u26085 , \'a515000)\u12290 \u27231 \u22580 \u21040 \u19978 \u37326 \u36554 \u31080 \u21487 \u19981 \u36023 \u65292 \u20351 \u29992 \u36020 \u36051 \u23460 \u38928 \u32004 \u20195 \u34399 \u65306 **JP2026SKYL**\u12290 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 accommodation\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                     name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Smart Stay Shizuku Ueno"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                     description\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u25552 \u20379 \u33298 \u36969 \u20241 \u25001 \u31354 \u38291 \u30340 \u29305 \u33394 \u20303 \u23487 \u65292 \u20301 \u26044 \u19978 \u37326 \u21312 \u22495 \u12290 "\cf5 \strokec5  \cb1 \
+\cb3                 \cf9 \strokec9 \}\cf5 \strokec5  \cb1 \
+\cb3             \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf8 \strokec8 // 1/15 (Day 2) - \uc0\u28369 \u38634 \u26085  1 (\u23721 \u21407 )\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 2\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/15 (\uc0\u36913 \u20116 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 2"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u19978 \u37326  \u8594  \u36234 \u24460 \u28271 \u27810 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36234 \u24460 \u28271 \u27810 \u36554 \u31449 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Transport"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "train"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "6:14 - 7:22"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u26032 \u24185 \u32218 (\u19978 \u37326 \u21040 \u36234 \u24460 \u28271 \u27810 )\u65292 \'a56,580\u12290 "\cf9 \strokec9 ,\cf5 \strokec5  transportDetails\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u19978 \u36234 \u26032 \u24185 \u32218  \u26417 \u40442 \u34399  (Toki 301/303) | \u20056 \u36554 \u26178 \u38291 : 1\u23567 \u26178 8\u20998  | \u36335 \u32218 : \u19978 \u37326 \u31449  (12/14\u26376 \u21488 ) \u8594  \u36234 \u24460 \u28271 \u27810 \u36554 \u31449  | JR\u24291 \u22495 \u21608 \u36938 \u21048 \u21253 \u21547 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 3\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/15 (\uc0\u36913 \u20116 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 2"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31199 \u20511 \u38634 \u20855 \u33287 \u34892 \u26446 \u23492 \u25918 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "boosport \uc0\u38634 \u20855 \u24215 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Event"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "loader"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "7:30"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "**\uc0\u37325 \u35201 \u38928 \u32004 \u20195 \u34399 **: **202510305054** (\u40643 \u29141 \u29747 /\u24373 \u20977 \u27874 )\u12290 \u34892 \u26446 \u23492 \u25918  \'a5500\u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 4\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/15 (\uc0\u36913 \u20116 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 2"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u23721 \u21407 \u28369 \u38634 \u22580  (Iwahara)"\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u23721 \u21407 \u28369 \u38634 \u22580 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Attraction"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "snowflake"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "~16:00"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u21021 \u23416 \u32773 \u21451 \u21892 \u38634 \u22580 \u12290 \u35531 \u21209 \u24517 \u22312 \u32080 \u26463 \u24460 \u22238 \u38634 \u20855 \u24215 \u25343 \u34892 \u26446 \u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                 id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 5\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/15 (\uc0\u36913 \u20116 )"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 2"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36234 \u24460 \u28271 \u27810 \u26202 \u39184 \u33287 \u20303 \u23487 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36234 \u24460 \u28271 \u27810 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Food/Accommodation"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "home"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u26202 \u39184 \u24460 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u24517 \u40670 \u33756 \u21934 \u65306 \u36234 \u24460 \u28271 \u28580 \u30340 \u28165 \u37202 \u21644 \u31859 \u39151 \u26159 \u24517 \u21507 \u32654 \u39135 \u12290 "\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 accommodation\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                     name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36234 \u24460 \u20013 \u37324  \u22825 \u20351 \u26684 \u34349 \u24093 \u20126 \u37202 \u24215 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                     description\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Hotel Angel Grandia Echigo-Nakazato\uc0\u12290 \u38634 \u22580 \u21608 \u37002 \u35373 \u26045 \u23436 \u21892 \u30340 \u24230 \u20551 \u22411 \u39151 \u24215 \u12290 "\cf5 \strokec5  \cb1 \
+\cb3                 \cf9 \strokec9 \}\cf5 \strokec5  \cb1 \
+\cb3             \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf8 \strokec8 // 1/16 (Day 3) - \uc0\u28369 \u38634 \u26085  2 (GALA)\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 6\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/16 (\uc0\u36913 \u20845 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 3"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "GALA \uc0\u28271 \u27810 \u28369 \u38634 \u22580 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "GALA \uc0\u28271 \u27810 \u28369 \u38634 \u22580 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Attraction"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "snowflake"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u19978 \u21320  - ~16:00"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "**\uc0\u37325 \u35201 \u38928 \u32004 \u20195 \u34399 **: **G5U6FAMXJK, G64SKVWCZE, GDK57W3MBU** (\u26089 \u21106 \u31080 )\u12290 \u35531 \u23559 \u34892 \u26446 \u20808 \u23492 \u25918 \u22312 \u38634 \u20855 \u24215  (\'a5500)\u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 7\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/16 (\uc0\u36913 \u20845 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 3"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u27512 \u36996 \u38634 \u20855 \u33287 \u36820 \u22238 \u26481 \u20140 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36234 \u24460 \u28271 \u27810 \u36554 \u31449 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Transport"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "train"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "17:41 - 19:38"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u26032 \u24185 \u32218 /JR (\u36234 \u24460 \u28271 \u27810 \u21040 \u22823 \u23470 \u21040 \u26032 \u23487 )\u12290 \u36681 \u20056 \u37117 \u29151 \u22320 \u19979 \u37941 \u33267 \u35199 \u26032 \u23487 \u20116 \u19969 \u30446  (\'a56,580 + \'a5178)\u12290 \u35531 \u21209 \u24517 \u22312 \u25645 \u36554 \u21069 \u27512 \u36996 \u38634 \u20855  (boosport)\u12290 "\cf9 \strokec9 ,\cf5 \strokec5  transportDetails\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u19978 \u36234 \u26032 \u24185 \u32218  (\u36234 \u24460 \u28271 \u27810  13-14\u34399 \u26376 \u21488 \u20986 \u30332 ) | \u25563 \u20056 2\u27425  | \u36335 \u32218 : \u36234 \u24460 \u28271 \u27810  \u8594  \u22823 \u23470  \u8594  \u26032 \u23487  (\u36681 \u20056  JR \u28248 \u21335 \u26032 \u23487 \u32218 \u31561 ) \u8594  \u35199 \u26032 \u23487 \u20116 \u19969 \u30446  | \u20056 \u36554 \u26178 \u38291 : 1\u23567 \u26178 57\u20998  | JR\u24291 \u22495 \u21608 \u36938 \u21048 \u21253 \u21547 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                 id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 8\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/16 (\uc0\u36913 \u20845 )"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 3"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u35199 \u26032 \u23487 \u20303 \u23487 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u35199 \u26032 \u23487 \u20116 \u19969 \u30446 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Accommodation"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "home"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u22812 \u38291 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u25552 \u37266 : \u27492 \u34389 \u26377 5\u24373 \u38617 \u20154 \u24202 \u21644 3\u24373 \u26085 \u24335 \u24202 \u37610 \u12290 "\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 accommodation\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                     name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u35199 \u26032 \u23487 \u20116 \u19969 \u30446 \u27665 \u23487  (103)"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                     description\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36317 \u38626 \u35199 \u26032 \u23487 \u20116 \u19969 \u30446 \u31449 \u27493 \u34892 3\u20998 \u37912 \u30340 \u20844 \u23507 \u24335 \u20303 \u23487 \u12290 "\cf5 \strokec5  \cb1 \
+\cb3                 \cf9 \strokec9 \}\cf5 \strokec5  \cb1 \
+\cb3             \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf8 \strokec8 // 1/17 (Day 4) - \uc0\u31665 \u26681 \u19968 \u26085 \u36938 \cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                 id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 9\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/17 (\uc0\u36913 \u26085 )"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 4"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u26032 \u23487  \u8594  \u31665 \u26681  (\u23567 \u30000 \u21407 )"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Transport"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "bus"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "8:48 - 11:37"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u37117 \u29151 \u22823 \u27743 \u25144 \u32218 \u33267 \u26032 \u23487 \u65292 \u36681 \u20056 \u36362 \u23376 3\u29305 \u24613 \u33267 \u23567 \u30000 \u21407  (JR\u24291 \u22495 \u21048 \u21487 \u29992 )\u65292 \u20877 \u25645  H \u31665 \u26681 \u30010 \u32218 \u20844 \u36554 \u33267 \u20803 \u31665 \u26681 \u12290 \u32771 \u24942 \u36092 \u36023 \u31665 \u26681 \u21608 \u36938 \u21048 \u12290 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 transportDetails\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "JR \uc0\u29305 \u24613 \u36362 \u23376 \u34399  (Odori-ko) | \u36335 \u32218 : \u26032 \u23487  \u8594  \u23567 \u30000 \u21407  (\u32004 1.5\u23567 \u26178 ) | \u23567 \u30000 \u21407 \u36681 \u20056 \u31665 \u26681 \u30331 \u23665 \u24052 \u22763 \u33267 \u20803 \u31665 \u26681  (\u38656 \u33258 \u36027 /\u21608 \u36938 \u21048 )"\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 // \uc0\u22686 \u21152 \u36335 \u32218 \u22294 \u36899 \u32080 \cf5 \cb1 \strokec5 \
+\cb3                 routeLinks\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                         name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u37941 \u36947 : \u26032 \u23487  \u8594  \u23567 \u30000 \u21407 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                         url\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "https://www.google.com/maps/dir/3-ch%C5%8Dme-25-5+Honmachi/%E5%B0%8F%E7%94%B0%E5%8E%9F+%E6%97%A5%E6%9C%AC%E3%80%92250-0045+Kanagawa,+Odawara,+Shiroyama,+1+Chome%E2%88%921%E2%88%921/@35.4249087,139.2312959,10z/am=t/data=!4m19!4m18!1m5!1m1!1s0x6018f2d7b2bd22ff:0x749212541de509d4!2m2!1d139.6834147!2d35.6911717!1m5!1m1!1s0x6019a456371660b9:0xec7648d666eafdcd!2m2!1d139.1553932!2d35.2564449!2m3!6e0!7e2!8j1768550400!3e3!5i4?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                         name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u24052 \u22763 : \u23567 \u30000 \u21407  \u8594  \u20803 \u31665 \u26681 \u28207 "\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                         url\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "https://www.google.com/maps/dir/35.2564641,139.1554013/%E6%97%A5%E6%9C%AC%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%B8%A3%E7%AE%B1%E6%A0%B9%E7%94%B0+Motohakone,+6%E2%88%926%E2%88%9240+%E5%85%83%E7%AE%B1%E6%A0%B9%E6%B8%AF/@35.2232217,139.0102303,12z/am=t/data=!3m1!4b1!4m13!4m12!1m0!1m5!1m1!1s0x6019987d3a7c6a3d:0xefdd4cc47e408215!2m2!1d139.0305263!2d35.2009306!2m3!6e0!7e2!8j1768557600!3e3?entry=ttu"\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3                 \cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 10\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/17 (\uc0\u36913 \u26085 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 4"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 \u31070 \u31038  \u27700 \u19978 \u40165 \u23621 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 \u31070 \u31038  (\u20803 \u31665 \u26681 \u28207 )"\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Attraction"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "heart"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "12:00"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u24478 \u20803 \u31665 \u26681 \u28207 \u27493 \u34892 \u32004 15\u20998 \u37912 \u21487 \u36948 \u12290 \u25915 \u30053 \u65306 \u25490 \u38538 \u25293 \u29031 \u26178 \u38291 \u36611 \u38263 \u65292 \u24314 \u35696 \u25552 \u21069 \u25269 \u36948 \u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 11\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/17 (\uc0\u36913 \u26085 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 4"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u21320 \u39184  (\u39995 \u39770 \u39151 \u25110 \u20854 \u20182 )"\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 , \u20803 \u31665 \u26681 /\u34310 \u20043 \u28246 \u21312 \u22495 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Food"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "coffee"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u20013 \u21320 "\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u35215 \u21123 \u65306 \u39995 \u39770 \u39151  (\u38928 \u31639 \u32004  500 TWD / 200-400 TWD)\u12290 \u24517 \u21507 \u32654 \u39135 \u65306 \u32771 \u24942 \u30000 \u12416 \u12425 \u37504 \u12363 \u12388 \u20141 \u30340 \u35910 \u33104 \u21213 \u33995 \u39151  (\u38656 \u38989 \u22806 \u26597 \u35426 \u22320 \u40670 )\u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 12\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/17 (\uc0\u36913 \u26085 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 4"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u34310 \u20043 \u28246 \u28023 \u36042 \u33337 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u20803 \u31665 \u26681 \u28207  \u8594  \u26691 \u28304 \u21488 \u28207 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Attraction/Transport"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "ship"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "13:25 - 13:50"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u33337 \u31080  \'a51,200\u12290 \u38928 \u35336 \u25645 \u20056  13:25 \u33337 \u29677 \u12290 "\cf9 \strokec9 ,\cf5 \strokec5  transportDetails\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u34310 \u20043 \u28246 \u28023 \u36042 \u33337  | \u36335 \u32218 : \u20803 \u31665 \u26681 \u28207  \u8594  \u26691 \u28304 \u21488 \u28207  | \u33322 \u34892 \u26178 \u38291 : \u32004  25 \u20998 \u37912  | \u31665 \u26681 \u21608 \u36938 \u21048 \u21487 \u20351 \u29992 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 13\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/17 (\uc0\u36913 \u26085 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 4"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 \u28271 \u26412 \u32769 \u34903 \u33287 \u28331 \u27849 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 \u28271 \u26412 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Attraction/Event"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "hot-tub"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "16:30 - 18:00"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u24517 \u21507 \u32654 \u39135 \u65306 \u32769 \u34903 \u29305 \u33394 \u65306 \u40657 \u33394 \u28331 \u27849 \u34507 \u12289 \u29105 \u39237 \u38957 \u12290 \u21513 \u27744 \u27873 \u28331 \u27849  (\'a52250 + \'a5330)\u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3                 id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 14\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/17 (\uc0\u36913 \u26085 )"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 4"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36820 \u22238 \u26481 \u20140 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u23567 \u30000 \u21407  \u8594  \u26032 \u23487 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Transport"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "train"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "19:15 - 21:27"\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u31665 \u26681 \u30331 \u23665 \u32218 \u33267 \u23567 \u30000 \u21407 \u65292 \u36681  JR \u28248 \u21335 \u26032 \u23487 \u32218 \u22238 \u26032 \u23487 \u65292 \u20877 \u25645 \u22320 \u37941 \u22238 \u35199 \u26032 \u23487 \u20116 \u19969 \u30446 \u12290 "\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3                 transportDetails\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "JR \uc0\u28248 \u21335 \u26032 \u23487 \u32218  | \u36335 \u32218 : \u23567 \u30000 \u21407  \u8594  \u26032 \u23487  (\u32147 \u30001 \u22823 \u23470 \u12289 \u27744 \u34955 ) | \u20056 \u36554 \u26178 \u38291 : \u32004  1 \u23567 \u26178  40 \u20998  | JR\u24291 \u22495 \u21608 \u36938 \u21048 \u21253 \u21547 "\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 // \uc0\u22686 \u21152 \u36335 \u32218 \u22294 \u36899 \u32080 \cf5 \cb1 \strokec5 \
+\cb3                 routeLinks\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                         name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u37941 \u36947 : \u23567 \u30000 \u21407  \u8594  \u26032 \u23487 "\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                         url\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "https://www.google.com/maps/dir/%E5%B0%8F%E7%94%B0%E5%8E%9F+%E6%97%A5%E6%9C%AC%E3%80%92250-0045+Kanagawa,+Odawara,+Shiroyama,+1+Chome%E2%88%921%E2%88%921/3-ch%C5%8Dme-25-5+Honmachi/@35.4740928,139.2665531,11z/am=t/data=!4m19!4m18!1m5!1m1!1s0x6019a456371660b9:0xec7648d666eafdcd!2m2!1d139.1553932!2d35.2564449!1m5!1m1!1s0x6018f2d7b2bd22ff:0x749212541de509d4!2m2!1d139.6834147!2d35.6911717!2m3!6e0!7e2!8j1768590000!3e3!5i4?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3                 \cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf8 \strokec8 // 1/18 (Day 5) - \uc0\u34269 \u34899 \u26085 \u33287 \u36070 \u27512 \cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 15\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/18 (\uc0\u36913 \u19968 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 5"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "TeamLab \uc0\u40635 \u24067 \u21488 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u40635 \u24067 \u21488 \u20043 \u19992  TeamLab Borderless"\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Attraction"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "sparkles"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "8:30 - 11:00"\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u35531 \u27880 \u24847 \u38283 \u25918 \u26178 \u38291 \u20006 \u38928 \u30041 \u36092 \u31080 \u26178 \u38291 \u12290 "\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 16\cf9 \strokec9 ,\cf5 \strokec5  date\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "1/18 (\uc0\u36913 \u19968 )"\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Day 5"\cf9 \strokec9 ,\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u36070 \u27512 "\cf9 \strokec9 ,\cf5 \strokec5  location\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u25104 \u30000 /\u32701 \u30000 \u27231 \u22580 "\cf9 \strokec9 ,\cf5 \strokec5  type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Transport"\cf9 \strokec9 ,\cf5 \strokec5  icon\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "plane"\cf9 \strokec9 ,\cf5 \strokec5  time\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "12:40\uc0\u36215 "\cf9 \strokec9 ,\cf5 \strokec5  notes\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "\uc0\u20523 \u20523 \u35201 \u21435 \u25645 \u36554 \u21069 \u24448 \u27231 \u22580 \u12290 \u35531 \u22823 \u23478 \u27880 \u24847 \u33258 \u24049 \u33322 \u29677 \u26178 \u38291 \u12290 "\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 // --- Utility Functions ---\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 /** \uc0\u25552 \u21462 \u25152 \u26377 \u19981 \u37325 \u35079 \u30340  Day/Date \u32068 \u21512 \u65292 \u29992 \u26044 \u29983 \u25104 \u20998 \u38913  */\cf5 \cb1 \strokec5 \
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  getUniqueDays\cf9 \strokec9 (\cf5 \strokec5 data\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  daysMap \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\};\cf5 \cb1 \strokec5 \
+\cb3             data\cf9 \strokec9 .\cf5 \strokec5 forEach\cf9 \strokec9 (\cf5 \strokec5 item \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (!\cf5 \strokec5 daysMap\cf9 \strokec9 [\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 day\cf9 \strokec9 ])\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                     daysMap\cf9 \strokec9 [\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 day\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 =\cf5 \strokec5  item\cf9 \strokec9 .\cf5 \strokec5 date\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  \cf13 \strokec13 Object\cf9 \strokec9 .\cf5 \strokec5 keys\cf9 \strokec9 (\cf5 \strokec5 daysMap\cf9 \strokec9 ).\cf5 \strokec5 map\cf9 \strokec9 (\cf5 \strokec5 day \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 (\{\cf5 \cb1 \strokec5 \
+\cb3                 day\cf9 \strokec9 :\cf5 \strokec5  day\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 date\cf9 \strokec9 :\cf5 \strokec5  daysMap\cf9 \strokec9 [\cf5 \strokec5 day\cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}));\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  getIcon\cf9 \strokec9 (\cf5 \strokec5 type\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  icons \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Transport'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'train'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Attraction'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'map-pin'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Food'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'utensils'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Event'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'calendar-check'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Accommodation'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'bed'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Attraction/Transport'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'route'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Attraction/Event'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'mountain'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Food/Accommodation'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'home'\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \};\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  icons\cf9 \strokec9 [\cf5 \strokec5 type\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 ||\cf5 \strokec5  \cf10 \strokec10 'info'\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  getCardClass\cf9 \strokec9 (\cf5 \strokec5 type\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  classes \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Transport'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-transport'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Attraction'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-attraction'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Food'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-food'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Event'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-event'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Accommodation'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-accommodation'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Attraction/Transport'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-transport'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Attraction/Event'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-attraction'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3                 \cf10 \strokec10 'Food/Accommodation'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'card-accommodation'\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \};\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  classes\cf9 \strokec9 [\cf5 \strokec5 type\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 ||\cf5 \strokec5  \cf10 \strokec10 'luxury-card'\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  createGoogleMapsLink\cf9 \strokec9 (\cf5 \strokec5 location\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  url \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `https://www.google.com/maps/search/?api=1&query=\cf9 \strokec9 $\{\cf5 \strokec5 encodeURIComponent\cf9 \strokec9 (\cf5 \strokec5 location\cf9 \strokec9 )\}\cf10 \strokec10 `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  url\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 /** \uc0\u28210 \u26579 \u35443 \u32048 \u20056 \u36554 \u36039 \u35338 \u21312 \u22602  */\cf5 \cb1 \strokec5 \
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  renderTransportDetails\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 !==\cf5 \strokec5  \cf10 \strokec10 'Transport'\cf5 \strokec5  \cf9 \strokec9 &&\cf5 \strokec5  item\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 !==\cf5 \strokec5  \cf10 \strokec10 'Attraction/Transport'\cf9 \strokec9 )\cf5 \strokec5  \cf12 \strokec12 return\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  detailString \cf9 \strokec9 =\cf5 \strokec5  item\cf9 \strokec9 .\cf5 \strokec5 transportDetails \cf9 \strokec9 ||\cf5 \strokec5  \cf10 \strokec10 "\uc0\u28961 \u35443 \u32048 \u20056 \u36554 \u36039 \u35338 \u12290 "\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                 <div class="mt-4 p-3 bg-blue-50 rounded-lg text-gray-700 text-sm leading-relaxed border-l-4 border-blue-400">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p class="font-bold text-blue-600 mb-1 flex items-center">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <i data-lucide="route" class="w-4 h-4 mr-2"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \uc0\u35443 \u32048 \u20056 \u36554 \u26178 \u21051 \u34920 \u33287 \u36335 \u32218 \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <!-- \uc0\u20351 \u29992  <br> \u27161 \u31844 \u23559  | \u31526 \u34399 \u26367 \u25563 \u25104 \u25563 \u34892 \u65292 \u20197 \u27169 \u25836  PDF \u30340 \u22810 \u34892 \u39023 \u31034  -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p class="text-sm leading-relaxed">\cf9 \strokec9 $\{\cf5 \strokec5 detailString\cf9 \strokec9 .\cf5 \strokec5 replace\cf9 \strokec9 (\cf15 \strokec15 /\\|/\cf12 \strokec12 g\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 '<br>'\cf9 \strokec9 )\}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 /** \uc0\u28210 \u26579 \u20303 \u23487 \u36039 \u35338 \u21312 \u22602  (\u26032 \u22686 ) */\cf5 \cb1 \strokec5 \
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  renderAccommodationDetails\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (!\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 accommodation\cf9 \strokec9 )\cf5 \strokec5  \cf12 \strokec12 return\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                 <div class="accommodation-detail">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <i data-lucide="bed" class="w-5 h-5 mr-3 flex-shrink-0 text-yellow-700"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <p class="font-bold text-base text-yellow-800">\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 accommodation\cf9 \strokec9 .\cf5 \strokec5 name\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <p class="text-sm mt-0.5">\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 accommodation\cf9 \strokec9 .\cf5 \strokec5 description\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\
+\cb3         \cf8 \strokec8 // --- Core Rendering Function ---\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf12 \strokec12 let\cf5 \strokec5  currentDay \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 'Day 1'\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 // \uc0\u38928 \u35373 \u39023 \u31034 \u31532 \u19968 \u22825 \cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 /**\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf8 \cb3 \strokec8          * Renders the itinerary content for the currently selected day.\cf5 \cb1 \strokec5 \
+\cf8 \cb3 \strokec8          * @param \{Array\} data - The itinerary data array.\cf5 \cb1 \strokec5 \
+\cf8 \cb3 \strokec8          * @param \{HTMLElement\} container - The container element.\cf5 \cb1 \strokec5 \
+\cf8 \cb3 \strokec8          * @param \{string\} dayFilter - The 'Day X' string to filter by.\cf5 \cb1 \strokec5 \
+\cf8 \cb3 \strokec8          */\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf12 \strokec12 function\cf5 \strokec5  renderItineraryContent\cf9 \strokec9 (\cf5 \strokec5 data\cf9 \strokec9 ,\cf5 \strokec5  container\cf9 \strokec9 ,\cf5 \strokec5  dayFilter\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  filteredData \cf9 \strokec9 =\cf5 \strokec5  data\cf9 \strokec9 .\cf5 \strokec5 filter\cf9 \strokec9 (\cf5 \strokec5 item \cf9 \strokec9 =>\cf5 \strokec5  item\cf9 \strokec9 .\cf5 \strokec5 day \cf9 \strokec9 ===\cf5 \strokec5  dayFilter\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 let\cf5 \strokec5  html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 filteredData\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 ===\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 container\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `<div class="p-6 text-center text-gray-500">\uc0\u35442 \u26085 \u28961 \u34892 \u31243 \u36039 \u26009 \u12290 </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 return\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf8 \strokec8 // \uc0\u35442 \u26085 \u27161 \u38988 \cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  dayInfo \cf9 \strokec9 =\cf5 \strokec5  filteredData\cf9 \strokec9 [\cf14 \strokec14 0\cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\cb3             html \cf9 \strokec9 +=\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                 <div class="px-4 pt-6 pb-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <h2 class="text-2xl font-extrabold text-gray-800">\cf9 \strokec9 $\{\cf5 \strokec5 dayInfo\cf9 \strokec9 .\cf5 \strokec5 date\cf9 \strokec9 \}\cf10 \strokec10  (\cf9 \strokec9 $\{\cf5 \strokec5 dayInfo\cf9 \strokec9 .\cf5 \strokec5 day\cf9 \strokec9 \}\cf10 \strokec10 )</h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p class="text-sm text-gray-400 mt-1">\cf9 \strokec9 $\{\cf5 \strokec5 dayInfo\cf9 \strokec9 .\cf5 \strokec5 location\cf9 \strokec9 .\cf5 \strokec5 split\cf9 \strokec9 (\cf10 \strokec10 ','\cf9 \strokec9 )[\cf14 \strokec14 0\cf9 \strokec9 ]\}\cf10 \strokec10  \uc0\u21312 \u22495 \u34892 \u31243 \u27010 \u35261 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3             filteredData\cf9 \strokec9 .\cf5 \strokec5 forEach\cf9 \strokec9 (\cf5 \strokec5 item \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 // Card Rendering\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 const\cf5 \strokec5  cardClass \cf9 \strokec9 =\cf5 \strokec5  getCardClass\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 type\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 const\cf5 \strokec5  iconName \cf9 \strokec9 =\cf5 \strokec5  getIcon\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 type\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 const\cf5 \strokec5  googleMapsLink \cf9 \strokec9 =\cf5 \strokec5  createGoogleMapsLink\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 location\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3                 \cf8 \strokec8 // \uc0\u29986 \u29983  Google Maps \u36335 \u32218 \u22294 \u25353 \u37397  (\u34253 \u33394 )\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 let\cf5 \strokec5  routeLinksHtml \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 routeLinks \cf9 \strokec9 &&\cf5 \strokec5  item\cf9 \strokec9 .\cf5 \strokec5 routeLinks\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 >\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                     routeLinksHtml \cf9 \strokec9 =\cf5 \strokec5  item\cf9 \strokec9 .\cf5 \strokec5 routeLinks\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 (\cf5 \strokec5 route \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                         <a href="\cf9 \strokec9 $\{\cf5 \strokec5 route\cf9 \strokec9 .\cf5 \strokec5 url\cf9 \strokec9 \}\cf10 \strokec10 " target="_blank" class="flex items-center justify-center p-3 rounded-xl bg-blue-600 text-white text-sm font-semibold transition hover:bg-blue-500 mb-2">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <i data-lucide="send" class="w-4 h-4 mr-2"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             \cf9 \strokec9 $\{\cf5 \strokec5 route\cf9 \strokec9 .\cf5 \strokec5 name\cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </a>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     `\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3                 \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\
+\cb3                 html \cf9 \strokec9 +=\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                     <div class="luxury-card \cf9 \strokec9 $\{\cf5 \strokec5 cardClass\cf9 \strokec9 \}\cf10 \strokec10  mx-4 mb-5 p-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="flex justify-between items-start">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <div class="flex-1 min-w-0">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <div class="text-xs font-semibold uppercase text-gray-400 mb-1">\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 type\cf9 \strokec9 .\cf5 \strokec5 replace\cf9 \strokec9 (\cf10 \strokec10 '/'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 ' / '\cf9 \strokec9 )\}\cf10 \strokec10 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <h3 class="text-lg font-bold text-gray-800">\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h3>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <i data-lucide="\cf9 \strokec9 $\{\cf5 \strokec5 iconName\cf9 \strokec9 \}\cf10 \strokec10 " class="w-6 h-6 text-gray-500 ml-3 flex-shrink-0"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <!-- \uc0\u20303 \u23487 \u36039 \u35338 \u21312 \u22602  -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf9 \strokec9 $\{\cf5 \strokec5 renderAccommodationDetails\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="mt-2 text-sm text-gray-600">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <p class="font-medium flex items-center">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <i data-lucide="clock" class="w-4 h-4 mr-2 text-indigo-400 flex-shrink-0"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <span>\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 time\cf9 \strokec9 \}\cf10 \strokec10 </span>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <p class="font-medium mt-1 flex items-start">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <i data-lucide="map-pin" class="w-4 h-4 mr-2 text-red-400 flex-shrink-0 mt-0.5"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <span>\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 location\cf9 \strokec9 \}\cf10 \strokec10 </span>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </p>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                             <!-- \uc0\u35443 \u32048 \u20056 \u36554 \u26178 \u21051 \u34920 \u33287 \u36335 \u32218  -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             \cf9 \strokec9 $\{\cf5 \strokec5 renderTransportDetails\cf9 \strokec9 (\cf5 \strokec5 item\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <div class="mt-3 p-3 bg-gray-50 rounded-lg text-gray-700 text-sm leading-relaxed">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <p class="font-semibold text-gray-600 mb-1">\uc0\u34892 \u31243 \u20633 \u35387 :</p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <!-- Apply simple markdown-style bolding for highlights -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 \cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 notes\cf9 \strokec9 .\cf5 \strokec5 replace\cf9 \strokec9 (\cf15 \strokec15 /\\*\\*(.*?)\\*\\*/\cf12 \strokec12 g\cf9 \strokec9 ,\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 match\cf9 \strokec9 ,\cf5 \strokec5  p1\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<span class="tag-important">\cf9 \strokec9 $\{\cf5 \strokec5 p1\cf9 \strokec9 \}\cf10 \strokec10 </span>`\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="mt-4 flex flex-col space-y-2">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <!-- Specific Route Maps (New) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             \cf9 \strokec9 $\{\cf5 \strokec5 routeLinksHtml\cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                             <!-- General Search Button (Existing) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <a href="\cf9 \strokec9 $\{\cf5 \strokec5 googleMapsLink\cf9 \strokec9 \}\cf10 \strokec10 " target="_blank" class="flex items-center justify-center p-3 rounded-xl bg-gray-800 text-white text-sm font-semibold transition hover:bg-gray-700">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 \uc0\u38283 \u21855 \u22320 \u22294  (\u23450 \u20301 )\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </a>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3             \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\
+\cb3             container\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  html\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             lucide\cf9 \strokec9 .\cf5 \strokec5 createIcons\cf9 \strokec9 ();\cf5 \strokec5  \cf8 \strokec8 // Re-render Lucide icons\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 // --- Tab Management ---\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  switchDay\cf9 \strokec9 (\cf5 \strokec5 day\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             currentDay \cf9 \strokec9 =\cf5 \strokec5  day\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  tabButtons \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 querySelectorAll\cf9 \strokec9 (\cf10 \strokec10 '.tab-btn'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  itineraryContainer \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'itinerary-content'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf8 \strokec8 // Update button styles\cf5 \cb1 \strokec5 \
+\cb3             tabButtons\cf9 \strokec9 .\cf5 \strokec5 forEach\cf9 \strokec9 (\cf5 \strokec5 btn \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 btn\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'active'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'text-gray-800'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'border-amber-500'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 btn\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'text-gray-400'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'border-transparent'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 btn\cf9 \strokec9 .\cf5 \strokec5 dataset\cf9 \strokec9 .\cf5 \strokec5 day \cf9 \strokec9 ===\cf5 \strokec5  day\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                     btn\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'active'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'text-gray-800'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'border-amber-500'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf8 \strokec8 // Render content for the selected day\cf5 \cb1 \strokec5 \
+\cb3             renderItineraryContent\cf9 \strokec9 (\cf13 \strokec13 ITINERARY_DATA\cf9 \strokec9 ,\cf5 \strokec5  itineraryContainer\cf9 \strokec9 ,\cf5 \strokec5  day\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 // --- Main App Initialization ---\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf12 \strokec12 function\cf5 \strokec5  renderAppContent\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  uniqueDays \cf9 \strokec9 =\cf5 \strokec5  getUniqueDays\cf9 \strokec9 (\cf13 \strokec13 ITINERARY_DATA\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf8 \strokec8 // \uc0\u29986 \u29983 \u20998 \u38913 \u25353 \u37397 \cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  tabButtonsHTML \cf9 \strokec9 =\cf5 \strokec5  uniqueDays\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 ((\cf5 \strokec5 d\cf9 \strokec9 ,\cf5 \strokec5  index\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 const\cf5 \strokec5  isActive \cf9 \strokec9 =\cf5 \strokec5  d\cf9 \strokec9 .\cf5 \strokec5 day \cf9 \strokec9 ===\cf5 \strokec5  currentDay\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 const\cf5 \strokec5  activeClass \cf9 \strokec9 =\cf5 \strokec5  isActive \cf9 \strokec9 ?\cf5 \strokec5  \cf10 \strokec10 'active text-gray-800 border-amber-500'\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'text-gray-400 border-transparent'\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf8 \strokec8 // \uc0\u20462 \u27491 \u65306 \u20351 \u29992  split(' ')[0] \u20358 \u21462 \u24471 \u26085 \u26399  (\u20363 \u22914  '1/14')\u65292 \u36991 \u20813 \u20986 \u29694 \u37679 \u35492 \u30340  '1/1'\cf5 \cb1 \strokec5 \
+\cb3                 \cf12 \strokec12 const\cf5 \strokec5  dateDisplay \cf9 \strokec9 =\cf5 \strokec5  d\cf9 \strokec9 .\cf5 \strokec5 date\cf9 \strokec9 .\cf5 \strokec5 split\cf9 \strokec9 (\cf10 \strokec10 ' '\cf9 \strokec9 )[\cf14 \strokec14 0\cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\
+\cb3                 \cf12 \strokec12 return\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                     <button data-day="\cf9 \strokec9 $\{\cf5 \strokec5 d\cf9 \strokec9 .\cf5 \strokec5 day\cf9 \strokec9 \}\cf10 \strokec10 " onclick="switchDay('\cf9 \strokec9 $\{\cf5 \strokec5 d\cf9 \strokec9 .\cf5 \strokec5 day\cf9 \strokec9 \}\cf10 \strokec10 ')" class="tab-btn py-3 px-4 border-b-4 \cf9 \strokec9 $\{\cf5 \strokec5 activeClass\cf9 \strokec9 \}\cf10 \strokec10  font-bold transition duration-300 hover:text-indigo-600 whitespace-nowrap text-sm md:text-base">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf9 \strokec9 $\{\cf5 \strokec5 d\cf9 \strokec9 .\cf5 \strokec5 day\cf9 \strokec9 \}\cf10 \strokec10  <span class="text-xs text-gray-500 ml-1">(\cf9 \strokec9 $\{\cf5 \strokec5 dateDisplay\cf9 \strokec9 \}\cf10 \strokec10 )</span>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3             \cf9 \strokec9 \}).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf12 \strokec12 return\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                 <header class="sticky top-0 bg-white/95 backdrop-blur-md z-10 shadow-sm">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="max-w-xl mx-auto p-4 flex justify-between items-center border-b border-gray-100">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <h1 class="text-2xl font-black text-gray-800 tracking-tight">\uc0\u55356 \u56815 \u55356 \u56821  \u26085 \u26412 \u38634 \u22283 \u20043 \u26053 </h1>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <span class="text-sm text-gray-500">\uc0\u20116 \u22825 \u22235 \u22812 \u35946 \u33775 \u34892 \u31243 </span>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <!-- \uc0\u26085 \u26399 \u20998 \u38913 \u23566 \u33322  (\u21407 \u20358 \u30340  Tab Navigation) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <nav class="bottom-nav flex items-center border-b border-gray-100 bg-white">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf9 \strokec9 $\{\cf5 \strokec5 tabButtonsHTML\cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </nav>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </header>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                 <!-- Itinerary Content Area -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div id="itinerary-content" class="bg-gray-50 min-h-screen">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <!-- Content rendered by renderItineraryContent() -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 // Initial setup and rendering logic (called immediately)\cf5 \cb1 \strokec5 \
+\cb3         window\cf9 \strokec9 .\cf5 \strokec5 addEventListener\cf9 \strokec9 (\cf10 \strokec10 'load'\cf9 \strokec9 ,\cf5 \strokec5  \cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 const\cf5 \strokec5  appElement \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'app'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 appElement\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 appElement\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  renderAppContent\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf8 \strokec8 // \uc0\u21021 \u22987 \u36617 \u20837 \u31532 \u19968 \u22825 \u30340 \u20839 \u23481 \cf5 \cb1 \strokec5 \
+\cb3                 switchDay\cf9 \strokec9 (\cf5 \strokec5 currentDay\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf8 \strokec8 // \uc0\u26292 \u38706 \u32102 \u20840 \u23616 \u20351 \u29992 \cf5 \cb1 \strokec5 \
+\cb3         window\cf9 \strokec9 .\cf5 \strokec5 switchDay \cf9 \strokec9 =\cf5 \strokec5  switchDay\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+}
