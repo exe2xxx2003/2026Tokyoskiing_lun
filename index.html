@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="zh-TW"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;旅遊行程與裝備清單&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/react@18/umd/react.development.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&amp;family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Noto Sans TC', sans-serif;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #111827; /* 深色背景 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.font-serif { font-family: 'Noto Serif JP', serif; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* 隱藏滾動條 */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.scrollbar-hide::-webkit-scrollbar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.scrollbar-hide {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-ms-overflow-style: none; /* IE and Edge */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>scrollbar-width: none; /* Firefox */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="p-4 bg-gray-900"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="root-travel-app" class="flex justify-center min-h-screen"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/babel"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const { useState } = React;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const { createRoot } = ReactDOM;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- 內聯 SVG 元件 (取代您原本的 import { ... } from 'lucide-react') ---</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const MapPin = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/&gt;&lt;circle cx="12" cy="10" r="3"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Cloud = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Calendar = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;rect width="18" height="18" x="3" y="4" rx="2" ry="2"/&gt;&lt;line x1="16" x2="16" y1="2" y2="6"/&gt;&lt;line x1="8" x2="8" y1="2" y2="6"/&gt;&lt;line x1="3" x2="21" y1="10" y2="10"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const User = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/&gt;&lt;circle cx="12" cy="7" r="4"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Shield = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M20 13c0 5-8 9-8 9s-8-4-8-9V5l8-3 8 3v8Z"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Phone = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.7-6.7A19.79 199.79 0 0 1 2 4.18V2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2 10.65 10.65 0 0 0 .1 1.09 2 2 0 0 1-.41 1.77L6.87 6.4a2 2 0 0 0 0 2.72l2.36 2.36a20 20 0 0 0 6.7-6.7l-2.36-2.36A2 2 0 0 0 14.8 2.09l.41-1.09a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2Z"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const CreditCard = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;rect width="20" height="14" x="2" y="5" rx="2"/&gt;&lt;line x1="2" x2="22" y1="10" y2="10"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Navigation = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;polygon points="3 11 22 2 13 21 11 13 3 11"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Snowflake = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;line x1="2" x2="22" y1="12" y2="12"/&gt;&lt;line x1="12" x2="12" y1="2" y2="22"/&gt;&lt;path d="m20 16-4-4 4-4"/&gt;&lt;path d="m4 8 4 4-4 4"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Coffee = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M10 2v2a6 6 0 0 0 6 6h2a6 6 0 0 0 6-6V2"/&gt;&lt;path d="M4 16v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/&gt;&lt;path d="M2 16h20"/&gt;&lt;path d="M6 10v6"/&gt;&lt;path d="M18 10v6"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Utensils = ({ size = 24, className = "" }) =&gt; &lt;svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}&gt;&lt;path d="M3 2v7c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V2"/&gt;&lt;line x1="7" x2="7" y1="11" y2="22"/&gt;&lt;line x1="17" x2="17" y1="11" y2="22"/&gt;&lt;path d="M15 2h-4c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2Z"/&gt;&lt;/svg&gt;;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- 1. 資料庫 (您的資料) ---</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const itineraryData = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>date: "1/14 (二)",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>location: "東京上野",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>weather: "☁️ 5°C",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>stay: "Smart Stay Shizuku Ueno",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>events: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "抵達", title: "抵達東京 &amp; 領取周遊券", desc: "購買/兌換 JR東京廣域周遊券(¥15000)", type: "transport" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "交通", title: "Skyliner 機場→上野", desc: "入住膠囊旅館，準備明日出發", type: "transport" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>date: "1/15 (三)",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>location: "越後湯澤",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>weather: "❄️ -2°C",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>stay: "天使格蘭帝亞酒店",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>events: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "06:14", title: "新幹線 Toki 303", desc: "上野 → 越後湯澤 (07:22到)", type: "transport" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "08:00", title: "Boosport 租雪具", desc: "寄放行李 (¥500)，試穿裝備", type: "activity" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "10:00", title: "岩原滑雪場 (Iwappara)", desc: "初學者天堂，寬廣緩坡。午餐推薦：雪場咖哩。", type: "ski", highlight: "必吃美食：麻糬豬肉咖哩" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "17:00", title: "飯店接駁 &amp; 晚餐", desc: "前往天使格蘭帝亞酒店 check-in", type: "stay" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>date: "1/16 (四)",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>location: "GALA 湯澤",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>weather: "❄️ -3°C",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>stay: "西新宿五丁目 Airbnb",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>events: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "09:00", title: "GALA 湯澤滑雪場", desc: "新幹線直結雪場。必去「愛之鐘」觀景台。", type: "ski" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "16:00", title: "歸還裝備", desc: "回到 Boosport 還雪具，取行李", type: "activity" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "17:41", title: "新幹線回東京", desc: "越後湯澤 → 大宮(轉乘) → 新宿(19:21到)", type: "transport" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "19:40", title: "入住西新宿民宿", desc: "5張雙人床 3張日式床鋪", type: "stay" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>date: "1/17 (五)",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>location: "箱根",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>weather: "⛅ 3°C",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>stay: "西新宿五丁目 Airbnb",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>events: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "09:25", title: "特急踴子號", desc: "新宿 → 小田原 (10:36到)", type: "transport" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "12:00", title: "箱根神社 &amp; 水上鳥居", desc: "拍攝平和鳥居，午餐吃權現麻糬。", type: "sightseeing", highlight: "必吃：權現麻糬" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "13:25", title: "箱根海賊船", desc: "元箱根港 → 桃源台 (¥1200)", type: "activity" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "16:30", title: "箱根湯本 &amp; 吉池溫泉", desc: "逛老街買黑蛋，吉池泡湯 (¥2580)", type: "relax", highlight: "必買：箱根黑蛋" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "19:42", title: "返回新宿", desc: "小田原(JR湘南新宿線) → 新宿", type: "transport" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>date: "1/18 (六)",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>location: "東京",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>weather: "☀ 8°C",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>events: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "08:30", title: "TeamLab Borderless", desc: "麻布台 Hills。注意：鏡面地板建議穿褲裝。", type: "sightseeing" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{ time: "12:40", title: "前往機場", desc: "倫倫搭車前往機場，大家注意航班時間。", type: "transport" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const equipmentData = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "HUANG YENLIN", item: "Ski 全套", size: "176cm / 27.5", price: "¥13,500", note: "護目鏡、手套、頭盔" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "CHANG, KAI PO", item: "SB 套裝", size: "165cm / 26.5", price: "¥6,000", note: "Regular (左前)" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "LIN,CHENG LUN", item: "SB Burton", size: "172cm / 28.0", price: "¥8,500", note: "Regular (左前) + 頭盔" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "Shih-Che Chen", item: "SB Burton", size: "175cm / 27.5", price: "¥8,500", note: "Goofy (右前) + 頭盔" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "Ko chechin", item: "Ski 全套", size: "170cm / 27.5", price: "¥12,000", note: "護目鏡、頭盔" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "HUANG YUNG PI", item: "Ski 套裝", size: "175cm / 27.0", price: "¥6,000", note: "基本三件套" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "cheng tung yao", item: "SB 全套", size: "180cm / 27.0", price: "¥9,000", note: "Regular (左前)" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "LIU CHANG LIN", item: "Ski 全套", size: "183cm / 28.5", price: "¥10,500", note: "+ 頭盔" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "ZHANG,EN-MAO", item: "Ski 全套", size: "172cm / 27.0", price: "¥10,500", note: "+ 頭盔" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "CHUN KUAN HUANG", item: "Ski 全套", size: "174cm / 27.0", price: "¥9,000", note: "基本全套" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "CHEN,KUAN-CHUN", item: "SB 全套", size: "168cm / 26.5", price: "¥13,500", note: "Regular + 配件全套" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ name: "YANG SHAN CHUN", item: "SB Burton", size: "170cm / 28.0", price: "¥11,500", note: "Regular + 頭盔" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- 2. UI 元件 ---</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Card = ({ children, className }) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className={`bg-[#1e293b] border border-[#fbbf24]/30 rounded-xl p-4 mb-4 shadow-lg backdrop-blur-sm ${className}`}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{children}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const Badge = ({ children, type }) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const colors = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>highlight: "bg-[#fbbf24] text-[#0f172a]",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>transport: "bg-blue-900/50 text-blue-200 border border-blue-700",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>ski: "bg-cyan-900/50 text-cyan-200 border border-cyan-700",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>sightseeing: "bg-green-900/50 text-green-200 border border-green-700",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>relax: "bg-red-900/50 text-red-200 border border-red-700",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>activity: "bg-purple-900/50 text-purple-200 border border-purple-700",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>stay: "bg-indigo-900/50 text-indigo-200 border border-indigo-700",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>default: "bg-slate-700 text-slate-300"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let typeText = children;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 這是為了在沒有 highlight 時，讓 badge 顯示中文分類</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (type === 'ski') typeText = '滑雪';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (type === 'transport') typeText = '交通';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (type === 'sightseeing') typeText = '觀光';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (type === 'relax') typeText = '休閒';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (type === 'activity') typeText = '活動';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (type === 'stay') typeText = '住宿';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className={`text-xs px-2 py-1 rounded-full font-medium ${colors[type] || colors.default}`}&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{children.includes('必吃') || children.includes('必買') ? children : typeText}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- 3. 主程式 ---</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function TravelApp() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const [activeTab, setActiveTab] = useState('trip');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="w-full max-w-md bg-[#0f172a] text-slate-100 flex flex-col h-screen relative overflow-hidden"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{/* 頂部導航列 */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="pt-12 pb-4 px-6 bg-gradient-to-b from-[#0f172a] to-[#0f172a]/90 z-10 sticky top-0 border-b border-[#fbbf24]/20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex justify-between items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;h1 className="text-2xl font-serif tracking-widest text-[#fbbf24]"&gt;日本行&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;p className="text-xs text-slate-400 uppercase tracking-widest"&gt;Jan 14 - Jan 18, 2025&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="bg-[#1e293b] p-2 rounded-full border border-[#fbbf24]/30"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;Cloud size={20} className="text-white" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{/* 內容捲動區 */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex-1 overflow-y-auto p-4 pb-24 scrollbar-hide"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{/* --- 行程分頁 --- */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{activeTab === 'trip' &amp;&amp; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>{itineraryData.map((day, idx) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div key={idx} className="relative pl-4 border-l-2 border-[#fbbf24]/20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#fbbf24] border-4 border-[#0f172a]" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="mb-2 flex justify-between items-end"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;h2 className="text-lg font-bold text-white"&gt;{day.date}&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-xs text-slate-400 flex items-center gap-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;MapPin size={12} /&gt; {day.location} {day.weather}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>{/* 每日卡片 */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>{day.events.map((event, eIdx) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;Card key={eIdx} className="relative overflow-hidden group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="flex justify-between items-start mb-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span className="text-[#fbbf24] font-mono text-sm font-bold"&gt;{event.time}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                        </span>{event.type === 'transport' || event.type === 'ski' ? (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;Navigation size={16} className="text-slate-500" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                        </span>) : null}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;h3 className="font-bold text-lg mb-1"&gt;{event.title}&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;p className="text-sm text-slate-400 mb-2 leading-relaxed"&gt;{event.desc}&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="flex gap-2 mt-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                        </span>{event.highlight &amp;&amp; &lt;Badge type="highlight"&gt;{event.highlight}&lt;/Badge&gt;}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;Badge type={event.type}&gt;{event.type}&lt;/Badge&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/Card&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>))}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>))}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{/* --- 裝備分頁 --- */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{activeTab === 'gear' &amp;&amp; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="space-y-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="bg-[#fbbf24]/10 p-4 rounded-lg border border-[#fbbf24]/30 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;h3 className="text-[#fbbf24] font-bold flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;Snowflake size={18} /&gt; Boosport 租借站</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;p className="text-xs text-slate-300 mt-1"&gt;請出示此清單給店員核對。寄放行李 ¥500/件。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="grid grid-cols-1 gap-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>{equipmentData.map((user, idx) =&gt; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;Card key={idx} className="flex flex-col gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between items-center border-b border-slate-700 pb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center text-[#fbbf24] font-bold text-xs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                        </span>{user.name.substring(0, 2)}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;span className="font-bold text-sm"&gt;{user.name}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-[#fbbf24] font-mono text-sm"&gt;{user.price}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="grid grid-cols-2 gap-2 text-xs text-slate-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div&gt;&lt;span className="text-slate-500"&gt;項目:&lt;/span&gt; {user.item}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div&gt;&lt;span className="text-slate-500"&gt;尺寸:&lt;/span&gt; {user.size}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="col-span-2"&gt;&lt;span className="text-slate-500"&gt;備註:&lt;/span&gt; {user.note}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/Card&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>))}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{/* --- 資訊分頁 --- */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>{activeTab === 'info' &amp;&amp; (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="space-y-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;Card&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;CreditCard size={18} className="text-[#fbbf24]" /&gt; 預算概覽</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;ul className="space-y-3 text-sm text-slate-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;li className="flex justify-between"&gt;&lt;span&gt;JR 東京廣域周遊券&lt;/span&gt; &lt;span className="text-white"&gt;¥15,000&lt;/span&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;li className="flex justify-between"&gt;&lt;span&gt;吉池溫泉&lt;/span&gt; &lt;span className="text-white"&gt;¥2,580&lt;/span&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;li className="flex justify-between"&gt;&lt;span&gt;箱根周遊 (預估)&lt;/span&gt; &lt;span className="text-white"&gt;¥4,500&lt;/span&gt;&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;li className="pt-2 border-t border-slate-700 text-xs text-slate-500"&gt;不含住宿與餐費&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/Card&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;Card&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;Phone size={18} className="text-red-400" /&gt; 緊急聯絡</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="grid grid-cols-2 gap-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;a href="tel:119" className="bg-red-900/30 border border-red-800 p-3 rounded-lg text-red-200 text-sm font-bold text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>救護車 119</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;a href="tel:110" className="bg-red-900/30 border border-red-800 p-3 rounded-lg text-red-200 text-sm font-bold text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>警察 110</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="col-span-2 text-xs text-slate-400 text-center mt-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>旅外國人急難救助: 0800-085-095</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/Card&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>{/* 底部導航列 */}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="absolute bottom-0 w-full max-w-md bg-[#0f172a] border-t border-[#fbbf24]/20 flex justify-around py-4 pb-8 z-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>onClick={() =&gt; setActiveTab('trip')}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>className={`flex flex-col items-center gap-1 text-xs ${activeTab === 'trip' ? 'text-[#fbbf24]' : 'text-slate-500'}`}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;Calendar size={24} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>行程</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>onClick={() =&gt; setActiveTab('gear')}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>className={`flex flex-col items-center gap-1 text-xs ${activeTab === 'gear' ? 'text-[#fbbf24]' : 'text-slate-500'}`}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;User size={24} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>裝備</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>onClick={() =&gt; setActiveTab('info')}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>className={`flex flex-col items-center gap-1 text-xs ${activeTab === 'info' ? 'text-[#fbbf24]' : 'text-slate-500'}`}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;Shield size={24} /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>資訊</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>} <span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 渲染應用程式到 DOM</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const rootElement = document.getElementById('root-travel-app');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>createRoot(rootElement).render(&lt;TravelApp /&gt;);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
